@@ -20,14 +20,16 @@ export default function Home() {
 </motion.div>
 
 
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.6 }}
-        className="text-lg md:text-xl text-center max-w-xl"
-      >
-        Open Instagram during focus hours? Miss your NFC tap? You lose 1 USDC. A smart contract slashes your stake and sends it to a shared pot—rewarding the disciplined or funding public goods. It’s a decentralized dopamine penalty box. NFC x blockchain. Let’s go.
-      </motion.p>
+      <motion.div
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.3, duration: 0.6 }}
+>
+  <p className="text-lg md:text-xl text-center max-w-xl">
+    Open Instagram during focus hours? Miss your NFC tap? You lose 1 USDC. A smart contract slashes your stake and sends it to a shared pot—rewarding the disciplined or funding public goods. It’s a decentralized dopamine penalty box. NFC x blockchain. Let’s go.
+  </p>
+</motion.div>
+
 
       <Button onClick={() => setShowDetails(!showDetails)}>
         {showDetails ? "Hide Details" : "How It Works"}
