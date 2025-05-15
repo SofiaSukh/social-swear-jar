@@ -10,10 +10,14 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-6 space-y-8">
       <motion.h1
+        {...({} as React.HTMLAttributes<HTMLHeadingElement>)}
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="text-4xl md:text-6xl font-bold text-center"
+        as="h1"
+>
+
       >
         The Social Swear Jar
       </motion.h1>
